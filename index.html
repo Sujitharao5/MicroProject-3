@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Calculator – Figma</title>
+        <link rel="icon" type="image/x-icon" href="./figma.png">
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Segoe UI' rel='stylesheet'>
+        <script type="text/javascript" src="./script.js">        
+                    </script>
+
+    </head>
+    <body>
+            <div id="calc">
+                calc
+            </div>
+            <div id="display">
+                <input type="text" id="result">
+
+            </div>
+            <div id="numbers">
+                <div id="box"> 
+                    <div id="row1">
+                        <input type="button" value="7" class="buttons" onclick = "Solve('7')">
+                        <input type="button" value="8" class="buttons" onclick = "Solve('8')">
+                        <input type="button" value="9" class="buttons" onclick = "Solve('9')">
+                        <input type="button" value="DEL" class="del"  onclick ="Delete('DEL')">
+                    </div>
+                    <div id="row2">
+                        <input type="button" value="4" class="buttons" onclick = "Solve('4')">
+                        <input type="button" value="5" class="buttons" onclick = "Solve('5')">
+                        <input type="button" value="6" class="buttons" onclick = "Solve('6')">
+                        <input type="button" value="+" class="buttons" onclick = "Solve('+')">
+                    </div>
+                    <div id="row3">
+                        <input type="button" value="1" class="buttons" onclick = "Solve('1')">
+                        <input type="button" value="2" class="buttons" onclick = "Solve('2')">
+                        <input type="button" value="3" class="buttons" onclick = "Solve('3')">
+                        <input type="button" value="-" class="buttons" onclick = "Solve('-')">
+                    </div>
+                    <div id="row4">
+                        <input type="button" value="." class="buttons" onclick = "Solve('.')">
+                        <input type="button" value="0" class="buttons" onclick = "Solve('0')">
+                        <input type="button" value="/" class="buttons" onclick = "Solve('/')">
+                        <input type="button" value="x" class="buttons" onclick = "Solve('x')">
+                    </div>
+                    <div id="row5">
+                        <input type="button" value="RESET" class="Reset" onclick = "Reset()" >
+                        <input type="button" value="=" class="Equals"  onclick = "Result()">
+                        
+                    </div>
+                 </div>
+               </div>
+       
+    </body>
+</html>
